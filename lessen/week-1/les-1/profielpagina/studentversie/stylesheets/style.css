@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
-    margin: 20px;
+    margin: 0px;
     font-size: 20px;
     background-color: #A44200;
     border-radius: 40px;
@@ -126,6 +126,70 @@
     font-size: 14px;
 }
 
+.container {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: medium;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.gdpr-consent {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.gdpr-consent__description {
+    display: flex;
+    justify-content: center;
+}
+
+.gdpr-consent__choice {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.gdpr-consent__button--accept {
+    background-color: #d5f5d5;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: small;
+}
+
+.gdpr-consent__button--accept:hover {
+    background-color: #c5e3c5;
+}
+
+.gdpr-consent__button--reject {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: small;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 @media only screen and (min-width: 800px) {
 
     .page {
@@ -163,6 +227,24 @@
 
     .personalica-content__hr {
         width: 90%
+    }
+
+    .container {
+        width: 800px;
+    }
+
+    .gdpr-consent {
+        font-size: large;
+    }
+
+    .gdpr-consent__button--accept {
+        font-size: large;
+        margin: 5px;
+    }
+
+    .gdpr-consent__button--reject {
+        font-size: large;
+        margin: 5px;
     }
 
 }
